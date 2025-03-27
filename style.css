@@ -62,13 +62,12 @@ body {
     justify-content: center;
     align-items: center;
 	position: relative;
+	/* overflow: hidden; */
 }
 
 .container > img {
 	aspect-ratio: 1.5504055619;
-	min-width: 320px;
-    min-height: 206.398px; /* 320 * 0,6449925262 */
-    height: 40vh;
+	width: 500px;
 }
 
 .backdrop {
@@ -86,3 +85,21 @@ body {
         background-color: #3f454a;
     }
 }
+
+@media only screen and (max-width: 510px) {
+    .container > img {
+		width: 400px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .container > img {
+        width: 300px;
+    }
+}
+
+/* @media only screen and (max-width: 350px) {
+    .container > img {
+        width: 300px;
+    }
+} */
